@@ -92,7 +92,7 @@ def downloadAudio(linkAddress,quality_value):
             'format': 'bestaudio/best', # choice of quality
             'extractaudio' : True,      # only keep the audio
             'audioformat' : "mp3",      # convert to mp3 
-            'outtmpl': '%(title)s.mp4',        # name the file the ID of the video
+            'outtmpl': '%(title)s.mp3',        # name the file the ID of the video
             'noplaylist' : True,        # only download single song, not playlist
             }
     else: #if quality is 2
@@ -103,8 +103,8 @@ def downloadAudio(linkAddress,quality_value):
             options = {
             'format': 'worstaudio/worst', # choice of quality
             'extractaudio' : True,      # only keep the audio
-            'audioformat' : "mp4",      # convert to mp3 
-            'outtmpl': '%(title)s.mp4',        # name the file the ID of the video
+            'audioformat' : "mp3",      # convert to mp3 
+            'outtmpl': '%(title)s.mp3',        # name the file the ID of the video
             'noplaylist' : True,        # only download single song, not playlist
             }
     
